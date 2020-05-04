@@ -1,8 +1,7 @@
 {
   "name": "ng-orderby-pipe",
   "description": "angular order for array of strings and objects (with nested object support)",
-  "version": "0.10.0",
-  "main": "index.ts",
+  "version": "0.14.0",
   "repository": {
     "type": "git",
     "url": "git+https://github.com/vsomasvr/ng-orderby-pipe.git"
@@ -41,6 +40,11 @@
     "cleanup": "rimraf dist/*",
     "test": "jest --config tests/jest.conf.js",
     "build": "ng-packagr -p ng-package.json",
-    "build:dev": "ng-packagr -p ng-package.dev.json --watch"
+    "release": "npm run build && npm publish dist/"
+  },
+  "ngPackage": {
+    "lib": {
+      "entryFile": "index.ts"
+    }
   }
 }

@@ -3,6 +3,7 @@ import { OrderByPipe } from './order-by.pipe';
 
 @NgModule({
     declarations:[OrderByPipe],
-    exports:[OrderByPipe]
+    exports:[OrderByPipe],
+    providers:[OrderByPipe]
 })
-export class MainModule { }
+export class OrderByModule { }
