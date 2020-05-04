@@ -19,19 +19,19 @@ describe('OrderByPipe Tests', () => {
         const values = [
             {
                 name: 'Think Pad',
-                order: 2017
+                mfgYear: 2017
             },
             {
                 name: 'Macbook Pro',
-                order: 2016
+                mfgYear: 2016
             },
             {
                 name: 'Galago Pro',
-                order: 2020
+                mfgYear: 2020
             },
             {
                 name: 'XPS',
-                order: 2019
+                mfgYear: 2019
             }
         ];
         const result = pipe.transform(values, 'name');
@@ -39,19 +39,19 @@ describe('OrderByPipe Tests', () => {
         expect(result).toEqual([
             {
                 name: 'Galago Pro',
-                order: 2020
+                mfgYear: 2020
             },
             {
                 name: 'Macbook Pro',
-                order: 2016
+                mfgYear: 2016
             },
             {
                 name: 'Think Pad',
-                order: 2017
+                mfgYear: 2017
             },
             {
                 name: 'XPS',
-                order: 2019
+                mfgYear: 2019
             }
         ]);
 
@@ -60,19 +60,19 @@ describe('OrderByPipe Tests', () => {
         expect(result2).toEqual([
             {
                 name: 'XPS',
-                order: 2019
+                mfgYear: 2019
             },
             {
                 name: 'Think Pad',
-                order: 2017
+                mfgYear: 2017
             },
             {
                 name: 'Macbook Pro',
-                order: 2016
+                mfgYear: 2016
             },
             {
                 name: 'Galago Pro',
-                order: 2020
+                mfgYear: 2020
             }
         ]);
     });
@@ -81,28 +81,28 @@ describe('OrderByPipe Tests', () => {
         const values = [
             {
                 name: 'Think Pad',
-                order: 2017,
+                mfgYear: 2017,
                 config: {
                     memory: 32
                 }
             },
             {
                 name: 'Macbook Pro',
-                order: 2016,
+                mfgYear: 2016,
                 config: {
                     memory: 16
                 }
             },
             {
                 name: 'Galago Pro',
-                order: 2020,
+                mfgYear: 2020,
                 config: {
                     memory: 64
                 }
             },
             {
                 name: 'XPS',
-                order: 2019,
+                mfgYear: 2019,
                 config: {
                     memory: 8
                 }
@@ -113,28 +113,28 @@ describe('OrderByPipe Tests', () => {
         expect(result).toEqual([
             {
                 name: 'XPS',
-                order: 2019,
+                mfgYear: 2019,
                 config: {
                     memory: 8
                 }
             },
             {
                 name: 'Macbook Pro',
-                order: 2016,
+                mfgYear: 2016,
                 config: {
                     memory: 16
                 }
             },
             {
                 name: 'Think Pad',
-                order: 2017,
+                mfgYear: 2017,
                 config: {
                     memory: 32
                 }
             },
             {
                 name: 'Galago Pro',
-                order: 2020,
+                mfgYear: 2020,
                 config: {
                     memory: 64
                 }
@@ -146,28 +146,28 @@ describe('OrderByPipe Tests', () => {
         expect(result2).toEqual([
             {
                 name: 'Galago Pro',
-                order: 2020,
+                mfgYear: 2020,
                 config: {
                     memory: 64
                 }
             },
             {
                 name: 'Think Pad',
-                order: 2017,
+                mfgYear: 2017,
                 config: {
                     memory: 32
                 }
             },
             {
                 name: 'Macbook Pro',
-                order: 2016,
+                mfgYear: 2016,
                 config: {
                     memory: 16
                 }
             },
             {
                 name: 'XPS',
-                order: 2019,
+                mfgYear: 2019,
                 config: {
                     memory: 8
                 }
