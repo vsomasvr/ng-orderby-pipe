@@ -1,6 +1,10 @@
 # ng-orderby-pipe
  angular orderby pipe for array of strings and objects
+
+Install
  
+    npm i ng-orderby-pipe
+    
 Add to the angular app
  
     import {OrderByModule} from 'ng-orderby-pipe';
