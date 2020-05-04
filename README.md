@@ -1,5 +1,19 @@
 # ng-orderby-pipe
  angular orderby pipe for array of strings and objects
+ 
+Add to the angular app
+ 
+    import {OrderByModule} from 'ng-orderby-pipe';
+
+    @NgModule({
+      imports: [
+        OrderByModule,
+        ...
+      ],
+      ...
+    })
+ 
+Usage
 
     orderBy:key:desc/asc (default asc)
 
