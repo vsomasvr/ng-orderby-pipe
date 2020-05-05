@@ -33,4 +33,4 @@ Usage
 
     *ngFor="let value of values| orderBy:'config.memory'"
 
-
+Refer to an example app @ https://github.com/vsomasvr/angular-orderby-pipe-example
