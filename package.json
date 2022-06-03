@@ -18,12 +18,12 @@
   },
   "homepage": "https://github.com/vsomasvr/ng-orderby-pipe#readme",
   "peerDependencies": {
-    "@angular/core": "^9.0.0"
+    "@angular/core": "^11.0.5"
   },
   "devDependencies": {
     "@angular/compiler": "^9.0.0",
     "@angular/compiler-cli": "^9.0.0",
-    "@angular/core": "^9.0.0",
+    "@angular/core": "^11.0.5",
     "@types/jest": "24.0.18",
     "@types/node": "10.12.18",
     "codelyzer": "^5.2.1",
